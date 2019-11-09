@@ -18,13 +18,13 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PULUP" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x5D-Ri-mDB">
                                 <rect key="frame" x="100" y="406" width="214" height="84.5"/>
                                 <fontDescription key="fontDescription" type="italicSystem" pointSize="69"/>
-                                <color key="textColor" red="0.0" green="0.4063266957747072" blue="0.84240164974619292" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="highlightedColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="shadowColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <size key="shadowOffset" width="2" height="2"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="0.86564738497418858" blue="0.31728871340534737" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.60460318069999996" green="0.1051207485" blue="0.037017745909999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="x5D-Ri-mDB" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="F7V-DF-iOY"/>
                             <constraint firstItem="x5D-Ri-mDB" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="hz5-kY-lgs"/>
