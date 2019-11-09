@@ -15,20 +15,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Yn-O2-ehq">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Yn-O2-ehq">
                                 <rect key="frame" x="112" y="501" width="195" height="53"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="34"/>
                                 <state key="normal" title="FIND A SPOT">
                                     <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="17" scale="default" weight="regular"/>
                                 </state>
-                                <connections>
-                                    <action selector="FindButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2s7-ii-EcP"/>
-                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" semanticContentAttribute="spatial" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vwn-nk-jk9">
-                                <rect key="frame" x="98" y="335" width="223" height="53"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" semanticContentAttribute="spatial" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vwn-nk-jk9">
+                                <rect key="frame" x="95.5" y="331.5" width="223" height="53"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="34"/>
                                 <state key="normal" title="OFFER A SPOT">
                                     <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="17" scale="default" weight="medium"/>
@@ -37,10 +32,15 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <color key="tintColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="5Yn-O2-ehq" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="79.5" id="Fbr-ee-6oe"/>
+                            <constraint firstItem="5Yn-O2-ehq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="2.5" id="OnO-Wc-Ii9"/>
+                            <constraint firstItem="Vwn-nk-jk9" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dmU-bn-57o"/>
+                            <constraint firstItem="Vwn-nk-jk9" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-90" id="kbd-9H-fXc"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outlet property="FindSpot" destination="5Yn-O2-ehq" id="LKR-1X-Xy7"/>
                         <segue destination="ebj-iU-J6O" kind="showDetail" identifier="MapViewSegue" id="mRO-hQ-AnE"/>
                     </connections>
                 </viewController>
@@ -68,6 +68,9 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="brM-hd-OAW"/>
                     </view>
+                    <connections>
+                        <outlet property="UCR_MAP" destination="fG1-Y7-2Uy" id="Lie-8l-NYP"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bp2-2b-zdl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

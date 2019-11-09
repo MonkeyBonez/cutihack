@@ -10,19 +10,24 @@ import Foundation
 import UIKit
 
 class HomeViewController: UIViewController {
-
-    @IBAction func FindButton(sender: AnyObject)
+    
+    @IBAction func FindSpot(_ sender: Any)
     {
         self.performSegue(withIdentifier: "MapViewSegue", sender: self)
     }
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
     
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
 
-}
+    }
+
+
 
