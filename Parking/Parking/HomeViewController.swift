@@ -11,8 +11,7 @@ import UIKit
 
 class HomeViewController: UIViewController {
     
-    @IBAction func FindSpot(_ sender: Any)
-    {
+    @IBAction func FindSpot(_ sender: AnyObject) {
         self.performSegue(withIdentifier: "MapViewSegue", sender: self)
     }
     
