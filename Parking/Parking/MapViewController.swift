@@ -8,6 +8,7 @@
 
 import Foundation
 import UIKit
+import MapKit
 
 class MapViewController: UIViewController {
 
@@ -20,5 +21,8 @@ class MapViewController: UIViewController {
         super.didReceiveMemoryWarning()
     }
 
-
+    @IBAction func Retreat(_ sender: AnyObject) {
+        self.performSegue(withIdentifier: "Retreater", sender: self)
+    }
+    
 }
