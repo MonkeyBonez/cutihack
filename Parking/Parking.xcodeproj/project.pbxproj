@@ -9,12 +9,13 @@
 /* Begin PBXBuildFile section */
 		364950892377494000F1F9AD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 364950882377494000F1F9AD /* AppDelegate.swift */; };
 		3649508B2377494000F1F9AD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3649508A2377494000F1F9AD /* SceneDelegate.swift */; };
-		3649508D2377494000F1F9AD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3649508C2377494000F1F9AD /* ViewController.swift */; };
+		3649508D2377494000F1F9AD /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3649508C2377494000F1F9AD /* HomeViewController.swift */; };
 		364950902377494000F1F9AD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3649508E2377494000F1F9AD /* Main.storyboard */; };
 		364950922377494300F1F9AD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 364950912377494300F1F9AD /* Assets.xcassets */; };
 		364950952377494300F1F9AD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 364950932377494300F1F9AD /* LaunchScreen.storyboard */; };
 		364950A02377494300F1F9AD /* ParkingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3649509F2377494300F1F9AD /* ParkingTests.swift */; };
 		364950AB2377494300F1F9AD /* ParkingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 364950AA2377494300F1F9AD /* ParkingUITests.swift */; };
+		FBDAA10C23774DB1002034BF /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBDAA10B23774DB1002034BF /* MapViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +39,7 @@
 		364950852377494000F1F9AD /* Parking.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Parking.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		364950882377494000F1F9AD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3649508A2377494000F1F9AD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		3649508C2377494000F1F9AD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3649508C2377494000F1F9AD /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		3649508F2377494000F1F9AD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		364950912377494300F1F9AD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		364950942377494300F1F9AD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +50,7 @@
 		364950A62377494300F1F9AD /* ParkingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ParkingUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		364950AA2377494300F1F9AD /* ParkingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkingUITests.swift; sourceTree = "<group>"; };
 		364950AC2377494300F1F9AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FBDAA10B23774DB1002034BF /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,7 +103,8 @@
 			children = (
 				364950882377494000F1F9AD /* AppDelegate.swift */,
 				3649508A2377494000F1F9AD /* SceneDelegate.swift */,
-				3649508C2377494000F1F9AD /* ViewController.swift */,
+				3649508C2377494000F1F9AD /* HomeViewController.swift */,
+				FBDAA10B23774DB1002034BF /* MapViewController.swift */,
 				3649508E2377494000F1F9AD /* Main.storyboard */,
 				364950912377494300F1F9AD /* Assets.xcassets */,
 				364950932377494300F1F9AD /* LaunchScreen.storyboard */,
@@ -259,9 +262,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3649508D2377494000F1F9AD /* ViewController.swift in Sources */,
+				3649508D2377494000F1F9AD /* HomeViewController.swift in Sources */,
 				364950892377494000F1F9AD /* AppDelegate.swift in Sources */,
 				3649508B2377494000F1F9AD /* SceneDelegate.swift in Sources */,
+				FBDAA10C23774DB1002034BF /* MapViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
