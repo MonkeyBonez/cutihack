@@ -175,7 +175,7 @@
                                 <color key="tintColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" backgroundImage="arrow.right" catalog="system"/>
                                 <connections>
-                                    <segue destination="Xpe-RB-jLZ" kind="presentation" id="K8H-Rq-PL7"/>
+                                    <segue destination="bBD-C5-iih" kind="presentation" id="qUk-dT-UWw"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -187,11 +187,23 @@
             </objects>
             <point key="canvasLocation" x="51" y="955"/>
         </scene>
-        <!--View Controller-->
+        <!--Search-->
         <scene sceneID="gw1-xp-FMp">
             <objects>
                 <viewController id="bBD-C5-iih" customClass="ViewController" customModule="Parking" customModuleProvider="target" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" id="ufJ-Xn-HEz"/>
+                    <mapView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" id="qAy-k4-EAD">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    </mapView>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="Search" prompt="Search" id="ufJ-Xn-HEz">
+                        <barButtonItem key="rightBarButtonItem" systemItem="search" id="pVp-Im-krO">
+                            <connections>
+                                <action selector="searchButton:" destination="bBD-C5-iih" id="bJD-GO-WTY"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rKL-FE-r3j" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -206,7 +218,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QQ3-z4-5bk">
-                                <rect key="frame" x="20" y="177" width="374" height="482"/>
+                                <rect key="frame" x="0.0" y="177" width="414" height="665"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </mapView>
                             <searchBar contentMode="redraw" fixedFrame="YES" barStyle="blackTranslucent" text="" placeholder="Location Name" translatesAutoresizingMaskIntoConstraints="NO" id="PUb-gO-Zo3">
@@ -257,10 +269,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Screen Shot 2019-11-09 at 2.49.43 PM" translatesAutoresizingMaskIntoConstraints="NO" id="KRu-1T-fUT">
-                                <rect key="frame" x="17" y="54" width="381" height="710"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9iD-jx-fop">
                                 <rect key="frame" x="65" y="171" width="91" height="61"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -296,6 +304,10 @@
                                     <segue destination="Lqy-JM-bll" kind="presentation" id="bgl-xJ-bIn"/>
                                 </connections>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Screen Shot 2019-11-09 at 2.49.43 PM" translatesAutoresizingMaskIntoConstraints="NO" id="KRu-1T-fUT">
+                                <rect key="frame" x="-99" y="-142" width="513" height="1343"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.57283763499999996" green="0.099597757479999993" blue="0.035072852240000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <viewLayoutGuide key="safeArea" id="o2a-YR-rAz"/>
@@ -762,24 +774,6 @@
             </objects>
             <point key="canvasLocation" x="1713.0434782608697" y="120.53571428571428"/>
         </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="zxC-k6-Zev">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Xpe-RB-jLZ" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="8Jk-Pl-phb">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="bBD-C5-iih" kind="relationship" relationship="rootViewController" id="UM3-jz-vhm"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dfC-FQ-Vt0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="802.89855072463774" y="981.69642857142856"/>
-        </scene>
     </scenes>
     <resources>
         <image name="Screen Shot 2019-11-09 at 2.49.43 PM" width="706" height="890"/>
@@ -790,6 +784,6 @@
         <image name="magnifyingglass" catalog="system" width="64" height="56"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="yMt-sn-2mj"/>
+        <segue reference="QmE-3g-bfR"/>
     </inferredMetricsTieBreakers>
 </document>
