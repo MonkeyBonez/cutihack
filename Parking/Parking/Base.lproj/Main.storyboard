@@ -174,6 +174,9 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" backgroundImage="arrow.right" catalog="system"/>
+                                <connections>
+                                    <segue destination="Xpe-RB-jLZ" kind="presentation" id="K8H-Rq-PL7"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.57283763499999996" green="0.099597757479999993" blue="0.035072852240000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -182,7 +185,17 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="phg-vt-w2q" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="149.27536231884059" y="874.55357142857144"/>
+            <point key="canvasLocation" x="51" y="955"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="gw1-xp-FMp">
+            <objects>
+                <viewController id="bBD-C5-iih" customClass="ViewController" customModule="Parking" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="ufJ-Xn-HEz"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rKL-FE-r3j" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1713.0434782608697" y="981.69642857142856"/>
         </scene>
         <!--Map View Controller-->
         <scene sceneID="Vva-Ad-dDQ">
@@ -587,7 +600,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nC2-G0-Lim" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2804" y="843"/>
+            <point key="canvasLocation" x="4623.188405797102" y="842.41071428571422"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="JFR-Q2-H52">
@@ -749,6 +762,24 @@
             </objects>
             <point key="canvasLocation" x="1713.0434782608697" y="120.53571428571428"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="zxC-k6-Zev">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Xpe-RB-jLZ" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="8Jk-Pl-phb">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="bBD-C5-iih" kind="relationship" relationship="rootViewController" id="UM3-jz-vhm"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dfC-FQ-Vt0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="802.89855072463774" y="981.69642857142856"/>
+        </scene>
     </scenes>
     <resources>
         <image name="Screen Shot 2019-11-09 at 2.49.43 PM" width="706" height="890"/>
@@ -759,6 +790,6 @@
         <image name="magnifyingglass" catalog="system" width="64" height="56"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="YWO-IA-Rwg"/>
+        <segue reference="yMt-sn-2mj"/>
     </inferredMetricsTieBreakers>
 </document>
