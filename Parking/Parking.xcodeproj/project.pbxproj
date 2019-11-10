@@ -18,6 +18,8 @@
 		364950E12377A7F100F1F9AD /* TestMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 364950E02377A7F100F1F9AD /* TestMap.swift */; };
 		364950E52377B01600F1F9AD /* TryViewFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 364950E42377B01600F1F9AD /* TryViewFile.swift */; };
 		364950E72377B1C700F1F9AD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 364950E62377B1C700F1F9AD /* ViewController.swift */; };
+		D047C0962377C23000D543D1 /* SearchMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D047C0952377C23000D543D1 /* SearchMapViewController.swift */; };
+		D047C0982377CB6000D543D1 /* ConfirmationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D047C0972377CB6000D543D1 /* ConfirmationViewController.swift */; };
 		FBDAA10C23774DB1002034BF /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBDAA10B23774DB1002034BF /* MapViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -56,6 +58,8 @@
 		364950E02377A7F100F1F9AD /* TestMap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestMap.swift; sourceTree = "<group>"; };
 		364950E42377B01600F1F9AD /* TryViewFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TryViewFile.swift; sourceTree = "<group>"; };
 		364950E62377B1C700F1F9AD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D047C0952377C23000D543D1 /* SearchMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchMapViewController.swift; sourceTree = "<group>"; };
+		D047C0972377CB6000D543D1 /* ConfirmationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmationViewController.swift; sourceTree = "<group>"; };
 		FBDAA10B23774DB1002034BF /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -118,6 +122,8 @@
 				364950E42377B01600F1F9AD /* TryViewFile.swift */,
 				364950932377494300F1F9AD /* LaunchScreen.storyboard */,
 				364950962377494300F1F9AD /* Info.plist */,
+				D047C0952377C23000D543D1 /* SearchMapViewController.swift */,
+				D047C0972377CB6000D543D1 /* ConfirmationViewController.swift */,
 			);
 			path = Parking;
 			sourceTree = "<group>";
@@ -274,8 +280,10 @@
 				3649508D2377494000F1F9AD /* HomeViewController.swift in Sources */,
 				364950E12377A7F100F1F9AD /* TestMap.swift in Sources */,
 				364950E52377B01600F1F9AD /* TryViewFile.swift in Sources */,
+				D047C0982377CB6000D543D1 /* ConfirmationViewController.swift in Sources */,
 				364950892377494000F1F9AD /* AppDelegate.swift in Sources */,
 				364950E72377B1C700F1F9AD /* ViewController.swift in Sources */,
+				D047C0962377C23000D543D1 /* SearchMapViewController.swift in Sources */,
 				3649508B2377494000F1F9AD /* SceneDelegate.swift in Sources */,
 				FBDAA10C23774DB1002034BF /* MapViewController.swift in Sources */,
 			);

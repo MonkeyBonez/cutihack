@@ -50,7 +50,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="Mj7-3n-pvP"/>
                     <connections>
-                        <segue destination="ebj-iU-J6O" kind="showDetail" identifier="MapViewSegue" id="mRO-hQ-AnE"/>
+                        <segue destination="ebj-iU-J6O" kind="presentation" identifier="MapViewSegue" id="cVz-A1-Ntq"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -175,7 +175,7 @@
                                 <color key="tintColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" backgroundImage="arrow.right" catalog="system"/>
                                 <connections>
-                                    <segue destination="bBD-C5-iih" kind="presentation" id="qUk-dT-UWw"/>
+                                    <segue destination="ebj-iU-J6O" kind="presentation" id="ohX-vq-QCf"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -187,32 +187,10 @@
             </objects>
             <point key="canvasLocation" x="51" y="955"/>
         </scene>
-        <!--Search-->
-        <scene sceneID="gw1-xp-FMp">
-            <objects>
-                <viewController id="bBD-C5-iih" customClass="ViewController" customModule="Parking" customModuleProvider="target" sceneMemberID="viewController">
-                    <mapView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" id="qAy-k4-EAD">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    </mapView>
-                    <toolbarItems/>
-                    <navigationItem key="navigationItem" title="Search" prompt="Search" id="ufJ-Xn-HEz">
-                        <barButtonItem key="rightBarButtonItem" systemItem="search" id="pVp-Im-krO">
-                            <connections>
-                                <action selector="searchButton:" destination="bBD-C5-iih" id="bJD-GO-WTY"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
-                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="rKL-FE-r3j" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1713.0434782608697" y="981.69642857142856"/>
-        </scene>
         <!--Map View Controller-->
         <scene sceneID="Vva-Ad-dDQ">
             <objects>
-                <viewController storyboardIdentifier="MapViewController" id="ebj-iU-J6O" userLabel="Map View Controller" customClass="MapViewController" customModule="Parking" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MapViewController" id="ebj-iU-J6O" userLabel="Map View Controller" customClass="SearchMapViewController" customModule="Parking" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="cJ1-31-Tl2">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -235,7 +213,7 @@
                                     <color key="titleColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="vIH-ho-NYp" kind="presentation" animates="NO" id="OTT-Zr-X6t"/>
+                                    <action selector="searchButtonTapped:" destination="ebj-iU-J6O" eventType="touchUpInside" id="AJQ-pj-z2z"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -247,8 +225,12 @@
                         </connections>
                     </view>
                     <connections>
-                        <outlet property="mapSView" destination="QQ3-z4-5bk" id="UyW-SD-xFf"/>
+                        <outlet property="mapView" destination="QQ3-z4-5bk" id="ASW-gr-kn3"/>
+                        <outlet property="searchBar" destination="PUb-gO-Zo3" id="16z-ll-r8a"/>
+                        <outlet property="searchButton" destination="Tzo-ya-97O" id="eyR-sy-475"/>
                         <segue destination="BYZ-38-t0r" kind="show" identifier="Retreater" id="Zba-Yb-7gg"/>
+                        <segue destination="bRf-Ie-laA" kind="presentation" identifier="toConfirmation" id="W6y-Op-JzY"/>
+                        <segue destination="sAg-fu-7tr" kind="presentation" identifier="toDetailedLotInfo" id="GnN-2R-X7c"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bp2-2b-zdl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -266,14 +248,14 @@
             <objects>
                 <viewController id="vIH-ho-NYp" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="xNz-i6-QEN">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9iD-jx-fop">
                                 <rect key="frame" x="65" y="171" width="91" height="61"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
-                                    <segue destination="sAg-fu-7tr" kind="presentation" id="1hk-zi-Ftv"/>
+                                    <segue destination="sAg-fu-7tr" kind="presentation" identifier="" id="1hk-zi-Ftv"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="piS-k8-KVG">
@@ -447,10 +429,10 @@
             </objects>
             <point key="canvasLocation" x="2805.7971014492755" y="-282.58928571428572"/>
         </scene>
-        <!--View Controller-->
+        <!--Confirmation View Controller-->
         <scene sceneID="K5O-uj-lKa">
             <objects>
-                <viewController id="bRf-Ie-laA" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="confirmation" useStoryboardIdentifierAsRestorationIdentifier="YES" id="bRf-Ie-laA" customClass="ConfirmationViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="pcT-n6-Ztu">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -768,7 +750,11 @@
                         </subviews>
                         <color key="backgroundColor" red="0.57283763499999996" green="0.099597757479999993" blue="0.035072852240000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <viewLayoutGuide key="safeArea" id="ot1-Wf-V2S"/>
+                        <connections>
+                            <outlet property="searchBar" destination="lI6-tC-pFy" id="60v-cS-I5h"/>
+                        </connections>
                     </view>
+                    <navigationItem key="navigationItem" id="v0h-ab-aAR"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tiA-e7-Xj9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -784,6 +770,8 @@
         <image name="magnifyingglass" catalog="system" width="64" height="56"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="QmE-3g-bfR"/>
+        <segue reference="W6y-Op-JzY"/>
+        <segue reference="GnN-2R-X7c"/>
+        <segue reference="cVz-A1-Ntq"/>
     </inferredMetricsTieBreakers>
 </document>
