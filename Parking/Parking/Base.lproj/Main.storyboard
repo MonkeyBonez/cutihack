@@ -222,6 +222,7 @@
                         </connections>
                     </view>
                     <connections>
+                        <outlet property="mapSView" destination="QQ3-z4-5bk" id="UyW-SD-xFf"/>
                         <segue destination="BYZ-38-t0r" kind="show" identifier="Retreater" id="Zba-Yb-7gg"/>
                     </connections>
                 </viewController>
